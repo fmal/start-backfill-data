@@ -1,0 +1,27 @@
+{
+  "header": {
+    "login": "Logowanie",
+    "signup": "Rejestracja"
+  },
+  "signin": {
+    "title": "Logowanie",
+    "password": "Hasło",
+    "login": "Login",
+    "email": "Email",
+    "forgotQuestion": "Zapomniałeś/aś hasła?",
+    "errors": {
+      "emailNotValid": "Adres email jest niepoprawny"
+    }
+  },
+  "signup": {
+    "title": "Rejestracja",
+    "username": {
+      "label": "Nazwa użytkownika",
+      "placeholder": "Nazwa użytkownika"
+    },
+    "submit": "Zarejestruj teraz!",
+    "success": {
+      "welcome": "Witaj!"
+    }
+  }
+}

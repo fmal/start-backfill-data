@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`backfillFilesData backfills files data 1`] = `
+Object {
+  "filesData": Array [
+    Object {
+      "contents": Object {
+        "appName": "test",
+        "header": Object {
+          "login": "Login",
+          "logout": "Logout",
+          "signup": "Signup",
+        },
+        "signin": Object {
+          "email": "Email",
+          "errors": Object {
+            "accountDisabled": "This account has been disabled",
+            "emailNotValid": "Email address is not validated",
+          },
+          "forgotQuestion": "Zapomniałeś/aś hasła?",
+          "login": "Login",
+          "password": "Password",
+          "title": "Sign in",
+        },
+        "signup": Object {
+          "password": Object {
+            "label": "Password",
+            "placeholder": "Password",
+          },
+          "submit": "Sign up now!",
+          "success": Object {
+            "text": Array [
+              "Your sign up data was received.",
+              "Please check your email.",
+            ],
+            "welcome": "Witaj!",
+          },
+          "title": "Sign up",
+          "username": Object {
+            "label": "User name",
+            "placeholder": "User name",
+          },
+        },
+      },
+      "flattenedContents": Object {
+        "appName": "test",
+        "header__login": "Login",
+        "header__logout": "Logout",
+        "header__signup": "Signup",
+        "signin__email": "Email",
+        "signin__errors__accountDisabled": "This account has been disabled",
+        "signin__errors__emailNotValid": "Email address is not validated",
+        "signin__login": "Login",
+        "signin__password": "Password",
+        "signin__title": "Sign in",
+        "signup__password__label": "Password",
+        "signup__password__placeholder": "Password",
+        "signup__submit": "Sign up now!",
+        "signup__success__text__0": "Your sign up data was received.",
+        "signup__success__text__1": "Please check your email.",
+        "signup__title": "Sign up",
+        "signup__username__label": "User name",
+        "signup__username__placeholder": "User name",
+      },
+      "name": "translations-en",
+      "path": "C:\\\\Projects\\\\start-backfill-data\\\\test\\\\__fixtures__\\\\translations-en.json",
+    },
+    Object {
+      "contents": Object {
+        "appName": "test",
+        "header": Object {
+          "login": "Logowanie",
+          "logout": "Logout",
+          "signup": "Rejestracja",
+        },
+        "signin": Object {
+          "email": "Email",
+          "errors": Object {
+            "accountDisabled": "This account has been disabled",
+            "emailNotValid": "Adres email jest niepoprawny",
+          },
+          "forgotQuestion": "Zapomniałeś/aś hasła?",
+          "login": "Login",
+          "password": "Hasło",
+          "title": "Logowanie",
+        },
+        "signup": Object {
+          "password": Object {
+            "label": "Password",
+            "placeholder": "Password",
+          },
+          "submit": "Zarejestruj teraz!",
+          "success": Object {
+            "text": Object {
+              "0": "Your sign up data was received.",
+              "1": "Please check your email.",
+            },
+            "welcome": "Witaj!",
+          },
+          "title": "Rejestracja",
+          "username": Object {
+            "label": "Nazwa użytkownika",
+            "placeholder": "Nazwa użytkownika",
+          },
+        },
+      },
+      "flattenedContents": Object {
+        "header__login": "Logowanie",
+        "header__signup": "Rejestracja",
+        "signin__email": "Email",
+        "signin__errors__emailNotValid": "Adres email jest niepoprawny",
+        "signin__forgotQuestion": "Zapomniałeś/aś hasła?",
+        "signin__login": "Login",
+        "signin__password": "Hasło",
+        "signin__title": "Logowanie",
+        "signup__submit": "Zarejestruj teraz!",
+        "signup__success__welcome": "Witaj!",
+        "signup__title": "Rejestracja",
+        "signup__username__label": "Nazwa użytkownika",
+        "signup__username__placeholder": "Nazwa użytkownika",
+      },
+      "name": "translations-pl",
+      "path": "C:\\\\Projects\\\\start-backfill-data\\\\test\\\\__fixtures__\\\\translations-pl.json",
+    },
+  ],
+  "messagesData": Array [
+    Object {
+      "backfill": "test",
+      "from": "translations-en",
+      "key": "appName",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "Logout",
+      "from": "translations-en",
+      "key": "header__logout",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "This account has been disabled",
+      "from": "translations-en",
+      "key": "signin__errors__accountDisabled",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "Password",
+      "from": "translations-en",
+      "key": "signup__password__label",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "Password",
+      "from": "translations-en",
+      "key": "signup__password__placeholder",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "Your sign up data was received.",
+      "from": "translations-en",
+      "key": "signup__success__text__0",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "Please check your email.",
+      "from": "translations-en",
+      "key": "signup__success__text__1",
+      "to": "translations-pl",
+      "toPath": "test/__fixtures__/translations-pl.json",
+    },
+    Object {
+      "backfill": "Zapomniałeś/aś hasła?",
+      "from": "translations-pl",
+      "key": "signin__forgotQuestion",
+      "to": "translations-en",
+      "toPath": "test/__fixtures__/translations-en.json",
+    },
+    Object {
+      "backfill": "Witaj!",
+      "from": "translations-pl",
+      "key": "signup__success__welcome",
+      "to": "translations-en",
+      "toPath": "test/__fixtures__/translations-en.json",
+    },
+  ],
+}
+`;

@@ -1,0 +1,36 @@
+{
+  "appName": "test",
+  "header": {
+    "login": "Login",
+    "signup": "Signup",
+    "logout": "Logout"
+  },
+  "signin": {
+    "title": "Sign in",
+    "password": "Password",
+    "login": "Login",
+    "email": "Email",
+    "errors": {
+      "emailNotValid": "Email address is not validated",
+      "accountDisabled": "This account has been disabled"
+    }
+  },
+  "signup": {
+    "title": "Sign up",
+    "username": {
+      "label": "User name",
+      "placeholder": "User name"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Password"
+    },
+    "submit": "Sign up now!",
+    "success": {
+      "text": [
+        "Your sign up data was received.",
+        "Please check your email."
+      ]
+    }
+  }
+}

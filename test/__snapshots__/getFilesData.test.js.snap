@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFilesData extracts files data 1`] = `
+Array [
+  Object {
+    "contents": Object {
+      "propA": "foo",
+      "propB": "bar",
+      "propC": Object {
+        "propA": "baz",
+      },
+    },
+    "flattenedContents": Object {
+      "propA": "foo",
+      "propB": "bar",
+      "propC__propA": "baz",
+    },
+    "name": "file1",
+    "path": "/path/to/file1.json",
+  },
+  Object {
+    "contents": Object {
+      "propA": "foo",
+      "propB": Array [
+        "bar",
+        "baz",
+      ],
+    },
+    "flattenedContents": Object {
+      "propA": "foo",
+      "propB__0": "bar",
+      "propB__1": "baz",
+    },
+    "name": "file2",
+    "path": "/path/to/file2.json",
+  },
+]
+`;

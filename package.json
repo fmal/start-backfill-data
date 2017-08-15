@@ -1,0 +1,56 @@
+{
+  "name": "start-backfill-data",
+  "description": "Start runner task for back-filling missing fields across JSON files.",
+  "repository": "fmal/start-backfill-data",
+  "keywords": [
+    "start-task"
+  ],
+  "author": "Filip Malinowski <filip@fmal.me>",
+  "license": "MIT",
+  "version": "0.0.0-semantically-released",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "commitizen": "^2.9.6",
+    "cross-env": "^5.0.5",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.3",
+    "npm-check": "^5.4.5",
+    "prettier": "^1.5.3",
+    "rollup": "^0.47.4",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-post-replace": "^1.0.0",
+    "semantic-release": "^6.3.6",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "scripts": {
+    "build": "cross-env rollup -c -o $npm_package_main",
+    "test": "jest --coverage --env node --no-cache",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --single-quote --write \"src/**/*.js\" \"test/**/!(__snapshots__)/*.js\" rollup.config.js",
+    "deps": "npm-check -s",
+    "deps:update": "npm-check -u",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
