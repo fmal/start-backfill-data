@@ -63,7 +63,7 @@ Object {
         "signup__username__placeholder": "User name",
       },
       "name": "translations-en",
-      "path": "C:\\\\Projects\\\\start-backfill-data\\\\test\\\\__fixtures__\\\\translations-en.json",
+      "path": "test/__fixtures__/translations-en.json",
     },
     Object {
       "contents": Object {
@@ -120,7 +120,7 @@ Object {
         "signup__username__placeholder": "Nazwa użytkownika",
       },
       "name": "translations-pl",
-      "path": "C:\\\\Projects\\\\start-backfill-data\\\\test\\\\__fixtures__\\\\translations-pl.json",
+      "path": "test/__fixtures__/translations-pl.json",
     },
   ],
   "messagesData": Array [

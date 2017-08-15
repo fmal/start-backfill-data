@@ -16,7 +16,7 @@ Array [
       "propC__propA": "baz",
     },
     "name": "file1",
-    "path": "/path/to/file1.json",
+    "path": "path/to/file1.json",
   },
   Object {
     "contents": Object {
@@ -32,7 +32,7 @@ Array [
       "propB__1": "baz",
     },
     "name": "file2",
-    "path": "/path/to/file2.json",
+    "path": "path/to/file2.json",
   },
 ]
 `;

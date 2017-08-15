@@ -1,10 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 
-import { flattenObject } from './utils/index';
+import { flattenObject, normalizePath } from './utils/index';
 
 export default function getFilesData(filePaths) {
   return filePaths.reduce((filesData, filePath) => {
+    const CWD = process.cwd();
     const pathInfo = path.parse(filePath);
 
     if (pathInfo.ext !== '.json') {
@@ -16,7 +17,7 @@ export default function getFilesData(filePaths) {
     filesData.push({
       contents,
       flattenedContents: flattenObject(contents),
-      path: filePath,
+      path: normalizePath(path.relative(CWD, filePath)),
       name: pathInfo.name
     });
 

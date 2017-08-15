@@ -10,8 +10,8 @@ describe('getFilesData', () => {
   });
 
   it('extracts files data', () => {
-    const FILE_PATH1 = '/path/to/file1.json';
-    const FILE_PATH2 = '/path/to/file2.json';
+    const FILE_PATH1 = 'path/to/file1.json';
+    const FILE_PATH2 = 'path/to/file2.json';
 
     fsMock.__setMockFiles({
       [FILE_PATH1]: `{
