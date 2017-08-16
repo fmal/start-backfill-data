@@ -1,7 +1,6 @@
 {
   "presets": [
     ["env", {
-      "modules": "commonjs",
       "targets": {
         "node": 4
       }
