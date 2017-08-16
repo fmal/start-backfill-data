@@ -14,11 +14,11 @@ describe('backfillData task', () => {
   });
 
   it('returns function -> function -> function', () => {
-    expect(typeof task()()).toBe('function');
+    expect(typeof task()([])).toBe('function');
   });
 
   it('returns function -> function -> function -> Promise', () => {
-    expect(task()()()).toBeInstanceOf(Promise);
+    expect(task()([])()).toBeInstanceOf(Promise);
   });
 
   describe('returned Promise', () => {
